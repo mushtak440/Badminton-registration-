@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Badminton Tournament Registration</title>
+  <style>
+    body { font-family: Arial; background: #f2f2f2; padding: 20px; }
+    .form-container { background: #fff; padding: 20px; border-radius: 10px; max-width: 500px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h2 { text-align: center; }
+    input, select { width: 100%; padding: 10px; margin: 10px 0; }
+    button { background: #28a745; color: white; border: none; padding: 10px; cursor: pointer; width: 100%; }
+    button:hover { background: #218838; }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Register for Badminton Tournament</h2>
+    <form action="https://formspree.io/f/xyzabc" method="POST" onsubmit="redirectToSuccess()">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="number" name="age" placeholder="Age" required>
+      <input type="text" name="phone" placeholder="Phone Number" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <select name="category" required>
+        <option value="">Select Category</option>
+        <option value="singles">Singles</option>
+        <option value="doubles">Doubles</option>
+      </select>
+      <button type="submit">Submit Registration</button>
+    </form>
+  </div>
+
+  <script>
+    function redirectToSuccess() {
+      setTimeout(function() {
+        window.location.href = "success.html";
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
