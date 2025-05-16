@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - Kanai Tournament</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      margin: 10px 0 5px;
+      display: block;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Registration Form / पंजीकरण फॉर्म</h2>
+    <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+      <label>Full Name / पूरा नाम:</label>
+      <input type="text" name="Name" required>
+
+      <label>Age / उम्र:</label>
+      <input type="number" name="Age" required>
+
+      <label>Team Name / टीम का नाम:</label>
+      <input type="text" name="Team Name">
+
+      <label>Category / श्रेणी:</label>
+      <select name="Category" required>
+        <option value="Singles">Singles / एकल</option>
+        <option value="Doubles">Doubles / युगल</option>
+        <option value="Mixed">Mixed / मिश्रित</option>
+      </select>
+
+      <label>Contact Number / संपर्क नंबर:</label>
+      <input type="tel" name="Contact Number" required>
+
+      <label>Message / संदेश (वैकल्पिक):</label>
+      <textarea name="Message" rows="3"></textarea>
+
+      <button type="submit">Submit / भेजें</button>
+    </form>
+  </div>
+</body>
+</html>
